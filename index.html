@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Personal Website</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/268dc19092.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header -->
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img src="images/logo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+               <li><a href="#header">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Kevin</span><br>Jen from Austraila</h1>
+         </div>
+      </div>
+   </div>
+<!-- end header -->
+<!-- about -->
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-1">
+               <img src="images/user.png" alt="User">
+            </div>
+            <div class="col-2">
+               <h1 class="subtitle">About Me</h1>
+               <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                     <li><span>Web Development</span><br>Web app Developer</li>
+                     <li><span>App Development</span><br>Building Android/IOS apps</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>2021 - Current</span><br>UI/UX Design Trainnig at ET Institiute</li>
+                     <li><span>2019 - 2021</span><br>Team leader at StarApp LLC.</li>
+                     <li><span>2017 - 2019</span><br>UI/UX design executive at Coin Digital Ltd.</li>
+                     <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2016</span><br>UI/UX design Trainning at ET Institute</li>
+                     <li><span>2016</span><br>MBA from MIT Bangalore</li>
+                     <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end about -->
+   <!-- services -->
+   <div id="services">
+      <div class="container">
+         <h1 class="subtitle">My Services</h1>
+         <div class="servicesList">
+            <div>
+               <i class="fa-solid fa-code"></i>
+               <h1>Web Design</h1>
+               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <i class="fa-regular fa-crop"></i>
+               <h1>UI/UX Design</h1>
+               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+               <a href="#">Learn more</a>
+            </div>
+            <div>
+               <i class="fa-brands fa-app-store"></i>
+               <h1>App Development</h1>
+               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+               <a href="#">Learn more</a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- end services -->
+   <!-- Portfolio -->
+
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="subtitle">My Work</h1>
+         <div class="workList">
+            <div class="work">
+               <img src="images/work-1.png" alt="work1">
+               <div class="layer">
+                  <h2>Social Media App</h2>
+                  <p>The app connects you to the talented people around the world. Download it from the play store</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-2.png" alt="work1">
+               <div class="layer">
+                  <h2>Music App</h2>
+                  <p>The app connects you to the talented people around the world. Download it from the play store</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+            <div class="work">
+               <img src="images/work-3.png" alt="work1">
+               <div class="layer">
+                  <h2>Online Shopping App</h2>
+                  <p>The app connects you to the talented people around the world. Download it from the play store</p>
+                  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+               </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+
+   <!-- end portfolio -->
+   <!-- contact -->
+
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="left">
+               <h1 class="subtitle">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+               <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+               <div class="socialMedia">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="right">
+               <form onsubmit="sendEmail(); reset(); return false;">
+                  <input type="text" id="Name" placeholder="Your Name" required>
+                  <input type="email" id="Email" placeholder="Your Email" required>
+                  <textarea type="text" id="Massege" rows="6" placeholder="Your Massege"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>Copyright &copy; Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+      </div>
+   </div>
+
+   <!-- end contact -->
+
+   <script>
+
+      var tabLinks = document.getElementsByClassName('tab-links');
+      var tabContents = document.getElementsByClassName('tab-contents');
+
+      function opentab(tabName){
+         for(tabLink of tabLinks){
+            tabLink.classList.remove('active-link');
+         }
+         for(tabContent of tabContents){
+            tabContent.classList.remove('active-tab');
+         }
+         event.currentTarget.classList.add('active-link');
+         document.getElementById(tabName).classList.add('active-tab');
+      }
+
+   </script>
+   <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+         sidemenu.style.right = "0";
+      }
+      function closemenu(){
+         sidemenu.style.right = "-200px";
+      }
+
+   </script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "hirushadunuweera@gmail.com",
+          Password: "DFB950FF2BFC903AE7E5CB892788A6C3E3D3",
+          To: 'gamerboydunnaa@gmail.com',
+          From: 'hirushadunuweera@gmail.com',
+          Subject: "New Enquiry",
+          Body: 'Name : '+ document.getElementById('Name').value+'<br>Email : '+ document.getElementById('Email').value + '<br>Massege : '+ document.getElementById('Massege').value
+         }).then(
+          message => alert(message)
+        );
+      }
+    </script>
+    
+    
+</body>
+</html>
